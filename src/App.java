@@ -27,15 +27,15 @@ public class App {
       String palabra = "hola que tal ?";
       System.out.println(palabra);
 
-      Scanner entrada = new Scanner(System.in);
+      try (Scanner entrada = new Scanner(System.in)) {
+        int numero2 ; 
 
-      int numero2 ; 
+        System.out.println("Digite un numero : ");
 
-      System.out.println("Digite un numero : ");
+        numero2 = entrada.nextInt();
 
-      numero2 = entrada.nextInt();
-
-      System.out.println("el numero es :" +numero2);
+        System.out.println("el numero es :" +numero2);
+      }
 
     } 
 
