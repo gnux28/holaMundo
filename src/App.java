@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
       Persona persona = new Persona();
@@ -25,9 +27,15 @@ public class App {
       String palabra = "hola que tal ?";
       System.out.println(palabra);
 
+      Scanner entrada = new Scanner(System.in);
 
+      int numero2 ; 
 
+      System.out.println("Digite un numero : ");
 
+      numero2 = entrada.nextInt();
+
+      System.out.println("el numero es :" +numero2);
 
     } 
 
